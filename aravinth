@@ -1,0 +1,29 @@
+import java.util.*;
+public class CS {
+    public static void main(String[] args) {
+        HashMap<String,String> map=new  HashMap();
+        
+        map.put("CSK","chennai");
+        map.put("RCB","bangalore");
+        map.put("MI","Mumbai");
+        
+         // System.out.println(map.get("CSK"));
+          //System.out.println(map.get("RCB"));
+          //System.out.println(map.get("MI"));
+          //System.out.println(map.getOrDefault("RR","Not found"));
+        map.remove("RCB"); 
+         System.out.println(map.get("CSK"));
+          System.out.println(map.get("RCB"));
+          System.out.println(map.get("MI"));
+          System.out.println(map.getOrDefault("RR","Not found"));
+        
+        for(String key:map.keySet()){
+             System.out.println(map.keySet());
+            System.out.println(map.values());
+          
+        }
+         System.out.println(map.size());
+         System.out.println(map.isEmpty());
+        
+    }
+}
